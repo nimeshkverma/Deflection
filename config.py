@@ -1,8 +1,6 @@
 import os
 _basedir = os.path.abspath(os.path.dirname(__file__))
 
-DEBUG = False
-
 # Specify the server attributes here
 SERVER_HOST = '127.0.0.1'
 SERVER_PORT = 8000
