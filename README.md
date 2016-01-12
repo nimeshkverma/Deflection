@@ -3,55 +3,54 @@ A micro service framework to provide URL redirections with API version control.
 Built in Flask.
 
 Following is the directory structure.
-`
-├── README.md
 
-├── app
+`├── README.md`
 
-│   ├── __init__.py
+`├── app`
 
-│   ├── __init__.pyc
+`│   ├── __init__.py`
 
-│   ├── common_utils.py
+`│   ├── __init__.pyc`
 
-│   ├── v1
+`│   ├── common_utils.py`
 
-│   │   ├── __init__.py
+`│   ├── v1`
 
-│   │   ├── mapping.py
+`│   │   ├── __init__.py`
 
-│   │   ├── utils.py
+`│   │   ├── mapping.py`
 
-│   │   ├── views.py
+`│   │   ├── utils.py`
 
-│   ├── v2
+`│   │   ├── views.py`
 
-│   │   ├── __init__.py
+`│   ├── v2`
 
-│   │   ├── mapping.py
+`│   │   ├── __init__.py`
 
-│   │   ├── utils.py
+`│   │   ├── mapping.py`
 
-│   │   ├── views.py
+`│   │   ├── utils.py`
 
-│   └── v3
+`│   │   ├── views.py`
 
-│       ├── __init__.py
+`│   └── v3`
 
-│       ├── mapping.py
+`│       ├── __init__.py`
 
-│       ├── utils.py
+`│       ├── mapping.py`
 
-│       ├── views.py
+`│       ├── utils.py`
 
-├── config.py
+`│       ├── views.py`
 
-├── driver.py
+`├── config.py`
 
-└── test_server
+`├── driver.py`
 
-    └── driver.py
-`
+`└── test_server`
+
+`    └── driver.py`
 
 
 Following URLs are available for testing:-
