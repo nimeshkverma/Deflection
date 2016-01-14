@@ -1,14 +1,10 @@
-from flask import Flask
+import os
+import sys
 
-app = Flask(__name__)
-app.config.from_object('config')
+SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
+sys.path = [os.path.join(SCRIPT_DIR + '/../')] + sys.path
 
+from config import VERSIONS_ALLOWED
+from app_config import register_versions, app
 
-from app.v1.views import v1
-app.register_blueprint(v1, url_prefix='/1')
-
-from app.v2.views import v2
-app.register_blueprint(v2, url_prefix='/2')
-
-from app.v3.views import v3
-app.register_blueprint(v3, url_prefix='/3')
+register_versions(VERSIONS_ALLOWED)

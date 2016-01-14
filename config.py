@@ -7,3 +7,6 @@ SERVER_PORT = 8000
 
 # Statement for enabling the development environment
 DEBUG = True
+
+# Provide the Versions allowed here.
+VERSIONS_ALLOWED = ['2', '3']
