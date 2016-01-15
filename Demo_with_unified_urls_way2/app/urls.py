@@ -20,8 +20,6 @@ URL_MAPPINGS = {
 
 def add_url_rule(app, allowed_versions):
     for version in allowed_versions:
-        print version,
         for url, controler in URL_MAPPINGS[version].iteritems():
-            print url, controler
             app.add_url_rule(
                 url, url.replace('/', '_'), view_func=controler)
