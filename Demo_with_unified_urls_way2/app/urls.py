@@ -17,6 +17,11 @@ URL_MAPPINGS = {
     },
 }
 
+URL_MAPPINGS = {
+    '/dummy_post': v1.views.dummy_view,
+    '/dummy_get': v1.views.dummy_view,
+}
+
 
 def add_url_rule(app, allowed_versions):
     for version in allowed_versions:
