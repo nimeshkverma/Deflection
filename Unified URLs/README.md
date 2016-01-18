@@ -3,8 +3,8 @@
 
 Two architectures have been suggest to have API versioning.
 
-- `Architecture_one` provides versions with urls present in the `views.py`
-- `Architecture_two` provides versions with urls present in the `app/<version_folder>/urls.py`
+- `Architecture_one` provides versions with urls present in the `urls.py` with priority on API 
+- `Architecture_two` provides versions with urls present in the `urls.py` with priority on Version
 
 
 
