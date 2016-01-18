@@ -8,7 +8,7 @@ This project provide four different architectures for building a micro service f
 Out of the Four Architecture provide two are with unified `urls.py` and other two with urls assigned in the `views.py`.
 The tree structure of the Repo is:-
 
-![Repo Tree](https://github.com/nimeshkverma/Deflection/tree/master/images/repo_tree.jpg)
+![Repo Tree](https://github.com/nimeshkverma/Deflection/blob/master/images/Repo_tree.jpg)
 
 `testing` folder provides a test servers which hosts API to which the our Framework will redirect.
 
