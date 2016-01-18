@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 app.config.from_object('config')
@@ -22,3 +22,8 @@ def register_versions(allowed_versions):
     for version in allowed_versions:
         app.register_blueprint(
             VERSION_OBJECT_MAPPING[version], url_prefix=get_url_prefix(version))
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return jsonify({"Message": "URL not supported"}), 404

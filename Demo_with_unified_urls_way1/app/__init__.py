@@ -22,3 +22,8 @@ def redirect(version, path):
             return jsonify({'Response': 'Not A Supported Version'})
     else:
         return jsonify({'Response': 'Not A Supported API'})
+
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return jsonify({"Message": "URL not supported"}), 404
