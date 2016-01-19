@@ -1,14 +1,14 @@
 # Deflection
 ##### URL Redirection Framework with API Versioning
-![Flask](http://flask.pocoo.org/docs/0.10/_static/flask.png){: .center-image }
-![API Versioning ](http://justonesandzeros.typepad.com/images/2013/PlmApiVersioning/timeline.png){: .center-image }
+![Flask](http://flask.pocoo.org/docs/0.10/_static/flask.png)
+![API Versioning ](http://justonesandzeros.typepad.com/images/2013/PlmApiVersioning/timeline.png)
 
 This project provide four different architectures for building a micro service framework to provide URL redirections with API version control feature.
 
 Out of the Four Architecture provide two are with unified `urls.py` and other two with urls assigned in the `views.py`.
 The tree structure of the Repo is:-
 
-![Repo Tree](https://github.com/nimeshkverma/Deflection/blob/master/images/Repo_tree.jpg){: .center-image }
+![Repo Tree](https://github.com/nimeshkverma/Deflection/blob/master/images/Repo_tree.jpg)
 
 `testing` folder provides a test servers which hosts API to which the our Framework will redirect.
 
