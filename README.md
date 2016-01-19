@@ -11,19 +11,19 @@ This Document aims to provide why and how of the project pursued, reasons behind
 With the advent of the new features and technology support demanded by the product which they serve, APIs evolve over time. Many times the same API which serve the new features must also faithfully serve the old ones too. Hence API Versioning comes into pictures. If website's architecture handles the API Versioning logic in the Controllers, code becomes messy, convoluted and difficult to maintain.
 A Micro Framework which handles the logic of the Versioning of the API and accordingly redirecting them to the old/new API will help exponentially to overcome the drawbacks mentioned above.
 
-##### Tools used:
+###### Tools used:
 
-Language: Python
-Why: Python competes head to head with Scala in the handling load and providing fast responses for our use cases. It’s little behind Exilir. The major motivation factors for choosing Python were:
+- Language: Python
+- Why: Python competes head to head with Scala in the handling load and providing fast responses for our use cases. It’s little behind Exilir. The major motivation factors for choosing Python were:
 	- Availability of resources at our disposal
 	- Fast development
 	- Python’s disadvantages can be overcome via other means like horizontal scaling
 	
-Framework: Flask
-Why: Out of the two major player, Django and Flask, Flask was chosen because:
-  - It’s a micro framework with almost no batteries shipped along with it. Also the  user community support provides pluggable batteries for all the purposes and need (ORM etc). Hence Its light weight and flexible specially in our case as we only require a middleware over WSGI for Routing
-  - Very less and intuitive code
-  - Flexibility to expand the Micro service keeping our need in mind
+- Framework: Flask
+- Why: Out of the two major player, Django and Flask, Flask was chosen because:
+	- It’s a micro framework with almost no batteries shipped along with it. Also the  user community support provides pluggable batteries for all the purposes and need (ORM etc). Hence Its light weight and flexible specially in our case as we only require a middleware over WSGI for Routing
+	- Very less and intuitive code
+	- Flexibility to expand the Micro service keeping our need in mind
 
 This Repository provide four different architectures for building a micro service framework to provide URL redirections with API version control feature.
 
