@@ -1,12 +1,18 @@
-import os
-_basedir = os.path.abspath(os.path.dirname(__file__))
+class Config(object):
+    DEBUG = False
+    TESTING = False
+    DATABASE_URI = 'sqlite://:memory:'
+    SERVER_NAME = '127.0.0.1:8000'
+    VERSIONS_ALLOWED = ['1']
 
-# Specify the server attributes here
-SERVER_HOST = '127.0.0.1'
-SERVER_PORT = 8000
 
-# Statement for enabling the development environment
-DEBUG = True
+class ProductionConfig(Config):
+    DATABASE_URI = 'mysql://user@localhost/foo'
 
-# Provide the Versions allowed here.
-VERSIONS_ALLOWED = ['2', '3']
+
+class DevelopmentConfig(Config):
+    DEBUG = True
+
+
+class TestingConfig(Config):
+    TESTING = True
